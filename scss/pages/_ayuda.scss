@@ -1,0 +1,58 @@
+/**AYUDA**/
+
+/********** Section acordeon Ayuda **********/
+
+.main-ayuda {
+  display: flex;
+  flex-direction: column;
+  .main-ayuda__section-title {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: map-get($map: $box-model, $key: margin-bottom-primario);
+    h1 {
+      font-size: clamp(2.8rem, -0.8rem + 14vw, 5.5rem);
+      color: $color-title-index;
+      -webkit-text-stroke: 1px #000;
+      font-weight: 900;
+      text-shadow: 0 5px 8px rgba(0, 0, 0, 0.534);
+      text-align: center;
+    }
+    p {
+      font-size: clamp(1.5rem, 1.1rem + 2vw, 2rem);
+      font-weight: 700;
+      color: $color-purple-dark;
+    }
+  }
+
+  .main-ayuda__section-acordeon {
+    background-color: $color-purple-dark;
+    box-shadow: -20px 25px 3px 4px #1c19387a;
+    padding: 50px;
+    width: 60%;
+    color: $color-text-white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    border-radius: 10px;
+    margin-bottom: map-get($map: $box-model, $key: margin-bottom-primario);
+    h2 {
+      color: $color-pink-dark;
+      font-size: clamp(2rem, -8.2rem + 27.429vw, 4rem);
+      -webkit-text-stroke: 1px #000;
+      font-weight: 900;
+    }
+    summary {
+      font-size: clamp(1.1rem, 0.56rem + 3.2vw, 2rem);
+      color: white;
+      -webkit-text-stroke: 1px #000;
+    }
+    p {
+      font-size: clamp(0.9rem, 0.68rem + 1.6vw, 1.4rem);
+      opacity: 0.5;
+    }
+  }
+}

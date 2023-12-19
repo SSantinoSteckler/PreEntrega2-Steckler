@@ -1,0 +1,250 @@
+/* Responsive Tablet */
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-image: url(../assets/FONDO\ mobile.png);
+    background-attachment: initial;
+    background-size: auto;
+  }
+
+  header {
+    nav {
+      ul {
+        gap: 40px;
+        padding: 40px;
+        li {
+          a {
+            color: $color-pink-dark;
+          }
+        }
+      }
+    }
+  }
+
+  .main-index {
+    .main-index__section-valors {
+      .main-index__section-valors__article-contain {
+        flex-direction: column;
+        padding: 25px;
+        &:nth-child(2) {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .main-tecnologias {
+    .main-tecnologias__section-bento {
+      grid-template-columns: 1fr;
+      .main-tecnologias__section-bento__article-tecnologias {
+        &:first-child,
+        &:nth-child(4) {
+          grid-row: auto;
+          grid-column: auto;
+        }
+      }
+    }
+    .main-tecnologias__section-title {
+      .main-tecnologias__section-title__article-text {
+        p {
+          max-width: 100%;
+        }
+        a {
+          width: 100%;
+          .cta {
+            max-width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  /* Responsive Equipo */
+  .main-contacto {
+    flex-direction: column;
+    .main-contacto__section-title-form {
+      .main-contacto__section-title-form__article-text {
+        text-align: center;
+        p {
+          max-width: 100%;
+        }
+      }
+      .main-contacto__section-title-form__article-contacto {
+        justify-content: center;
+        align-items: center;
+        div {
+          width: 80%;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  /*Ayuda section Responsive */
+  .main-ayuda {
+    .main-ayuda__section-acordeon {
+      width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+}
+
+/* Responsive Mobile */
+
+@media screen and (max-width: 768px) {
+  body {
+    .nav-mobile {
+      display: block;
+    }
+  }
+
+  header {
+    .nav-desktop {
+      display: none;
+      ul {
+        justify-content: center;
+        gap: 10px;
+        padding: 30px;
+      }
+    }
+  }
+
+  /* Nav Mobile */
+
+  .nav-mobile {
+    box-shadow: 0 0 0.5rem $color-title-index;
+    backdrop-filter: blur(0.2rem);
+    background-color: $color-purple-light;
+    color: #111;
+    display: block;
+    position: relative;
+    margin: 0;
+    max-width: 100%;
+    font-family: system-ui;
+    border: 1px solid #8383eb;
+    border-radius: 4px;
+
+    h2::after {
+      content: '';
+      width: 36px;
+      height: 36px;
+      position: absolute;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9d/Arrow-down.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      right: 1rem;
+      top: 0.8rem;
+      transform: rotate(0deg);
+      transition: transform 300ms ease;
+    }
+
+    &:hover h2::after {
+      transform: rotate(-90deg);
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      padding: 16px;
+    }
+
+    .nav-mobile__content {
+      padding-inline: 1rem;
+      display: grid;
+      grid-template-rows: 0fr;
+    }
+
+    &:hover .nav-mobile__content {
+      grid-template-rows: 1fr;
+    }
+
+    .nav-mobile__content {
+      > div {
+        overflow: hidden;
+      }
+
+      ul {
+        list-style: none;
+        width: 100%;
+        padding: 0;
+
+        li {
+          width: 100%;
+          border-top: solid 0.4px rgba(0, 0, 0, 0.518);
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover {
+            background-color: #8383eb;
+            border-radius: 4px;
+          }
+
+          a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3rem;
+            display: block;
+            width: 100%;
+            text-align: center;
+            color: $color-text-white;
+          }
+        }
+      }
+    }
+  }
+
+  /* index section responsive */
+
+  .main-index {
+    .main-index__section-card {
+      flex-direction: column-reverse;
+      width: 100%;
+      .main-index__section-card__article-text {
+        padding: 32px;
+        .main-index__section-card__article-text__div-dates {
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .main-index__section-card__article-text__div-title {
+          flex-wrap: wrap;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  /* Responsive Equipo html */
+  .main-equipo {
+    .main-equipo__section-presentacion {
+      .main-equipo__section-presentacion__article-text {
+        max-width: 100%;
+      }
+    }
+    .main-equipo__section-perfiles {
+      .main-equipo__section-perfiles__article-equipo {
+        flex-direction: column;
+      }
+    }
+    .main-equipo__section-divisor {
+      flex-direction: column;
+      gap: 30px;
+      .main-equipo__section-divisor__article-elementos {
+        max-width: 100%;
+      }
+    }
+  }
+  /* Responsive tecnologias */
+  .main-tecnologias {
+    .main-tecnologias__section-title {
+      .main-tecnologias__section-title__article-text {
+        p {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+}

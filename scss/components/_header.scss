@@ -1,0 +1,58 @@
+body {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+header {
+  position: sticky;
+  top: -0.15rem;
+  backdrop-filter: blur(0.25rem);
+  box-shadow: 0 0.5rem 0.5rem #1c193833;
+  z-index: 999;
+
+  nav {
+    ul {
+      display: flex;
+      gap: 70px;
+      list-style: none;
+      padding: clamp(2rem, -31.8rem + 41.6vw, 3.3rem);
+      justify-content: space-around;
+
+      li {
+        a {
+          text-decoration: none;
+          font-size: clamp(1rem, -19.8rem + 25.6vw, 1.8rem);
+          font-weight: 700;
+          color: $color-text-white;
+          transition: all 0.3s ease;
+          display: flex;
+          align-items: center;
+          gap: 9px;
+          z-index: 999;
+
+          svg {
+            width: clamp(1.875rem, -30.625rem + 40vw, 3.125rem);
+            height: clamp(1.875rem, -30.625rem + 40vw, 3.125rem);
+
+            path {
+              fill: #ffffff;
+              transition: all 0.3s ease;
+            }
+          }
+
+          &:hover {
+            color: #22227f94;
+
+            path {
+              fill: #22227f94;
+            }
+          }
+        }
+      }
+    }
+    .nav-desktop {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,209 @@
+/* TECNOLOGIAS */
+
+/********* Section Bento Tecnologias ***********/
+
+.main-tecnologias {
+  .main-tecnologias__section-title {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    .main-tecnologias__section-title__article-text {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 5px;
+      h1 {
+        font-size: clamp(2.5rem, 1.037rem + 7.314vw, 5.7rem);
+        font-weight: 900;
+        -webkit-text-stroke: 1px #000;
+        color: $color-title-index;
+        text-shadow: 0 5px 8px rgba(0, 0, 0, 0.534);
+      }
+      p {
+        font-size: clamp(1.1rem, -5.9rem + 16vw, 1.5rem);
+        max-width: 40%;
+        font-weight: 900;
+        color: $color-purple-dark;
+      }
+      a {
+        text-decoration: none;
+        width: 450px;
+        margin-left: 10px;
+
+        .cta {
+          display: flex;
+          padding: 11px 33px;
+          text-decoration: none;
+          font-family: 'Poppins', sans-serif;
+          font-size: clamp(1rem, -3.318rem + 9.412vw, 1.2rem);
+          color: white;
+          background: #6225e6;
+          transition: 1s;
+          box-shadow: 6px 6px 0 black;
+          transform: skewX(-15deg);
+          border: none;
+          width: 100%;
+          font-weight: 900;
+        }
+
+        .cta:focus {
+          outline: none;
+        }
+
+        .cta:hover {
+          transition: 0.5s;
+          box-shadow: 10px 10px 0 #a65bd4;
+        }
+
+        .cta .second {
+          transition: 0.5s;
+          margin-right: 0px;
+        }
+
+        .cta:hover .second {
+          transition: 0.5s;
+          margin-right: 45px;
+        }
+
+        .span {
+          transform: skewX(15deg);
+        }
+
+        .second {
+          width: 20px;
+          margin-left: 30px;
+          position: relative;
+          top: 12%;
+        }
+
+        .one {
+          transition: 0.4s;
+          transform: translateX(-60%);
+        }
+
+        .two {
+          transition: 0.5s;
+          transform: translateX(-30%);
+        }
+
+        .cta:hover .three {
+          animation: color_anim 1s infinite 0.2s;
+        }
+
+        .cta:hover .one {
+          transform: translateX(0%);
+          animation: color_anim 1s infinite 0.6s;
+        }
+
+        .cta:hover .two {
+          transform: translateX(0%);
+          animation: color_anim 1s infinite 0.4s;
+        }
+
+        @keyframes color_anim {
+          0% {
+            fill: white;
+          }
+
+          50% {
+            fill: #a65bd4;
+          }
+
+          100% {
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+
+  .main-tecnologias__section-bento {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: map-get($map: $box-model, $key: padding-primario);
+    margin-bottom: map-get($map: $box-model, $key: margin-bottom-primario);
+    .main-tecnologias__section-bento__article-tecnologias:nth-child(4) {
+      background: rgb(28, 25, 56);
+      background: linear-gradient(
+        90deg,
+        rgba(28, 25, 56, 1) 51%,
+        rgba(204, 102, 153, 1) 100%
+      );
+    }
+    .main-tecnologias__section-bento__article-tecnologias {
+      background-color: $color-purple-dark;
+      border-radius: 12px;
+      padding: map-get($map: $box-model, $key: padding-primario);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      border: solid 3px rgb(229, 216, 216);
+      box-shadow: 0 0 10px #111;
+      h2 {
+        color: $color-title-index;
+        font-size: clamp(1.5rem, -8.294rem + 23.529vw, 3rem);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        font-weight: 900;
+        img {
+          width: clamp(2.5rem, -19.375rem + 50vw, 3.75rem);
+        }
+      }
+      p {
+        color: $color-text-white;
+        font-size: clamp(1rem, -6rem + 16vw, 1.4rem);
+      }
+      &:first-child {
+        grid-row: span 2;
+      }
+      &:nth-child(4) {
+        grid-column: span 2;
+      }
+      .main-tecnologias__section-bento__article-tecnologias__div-info {
+        background-color: $color-title-index;
+        border-radius: 12px;
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-left: solid 10px #8547ac;
+        .div-text {
+          h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.712);
+          }
+          span {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.53);
+          }
+        }
+        .div-img {
+          img {
+            width: clamp(2.5rem, -19.375rem + 50vw, 3.75rem);
+          }
+        }
+        &:hover {
+          background-color: $color-purple-light;
+        }
+      }
+      img {
+        width: map-get($map: $box-model, $key: width-total);
+      }
+      .main-tecnologias__section-bento__article-tecnologias__iframe-bootsrap {
+        width: map-get($map: $box-model, $key: width-total);
+        height: 370px;
+        border-radius: 14px;
+      }
+    }
+  }
+}
