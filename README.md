@@ -7,6 +7,7 @@
 - HTML
 - CSS
 - Bootstrap
+- Sass
 - GIT
 
 #### Front Works es tu pasaporte al mundo digital sin complicaciones. Imagina tener tu propio sitio web sin tener que preocuparte por los detalles técnicos. Nosotros nos encargamos de construir sitios web a medida de tus necesidades, sin importar si eres un emprendedor creativo, una pequeña empresa o simplemente alguien con grandes ideas.
