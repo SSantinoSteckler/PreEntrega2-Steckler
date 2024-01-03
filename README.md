@@ -1,4 +1,4 @@
-# PreEntrega2-Steckler
+# PreEntrega-Steckler
 
 ## Proyecto Front-Works
 
