@@ -68,19 +68,33 @@ footer {
   flex-direction: row;
   padding: 20px;
   gap: 30px;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer div span {
+  color: #1c1938;
+  font-weight: 900;
+  font-size: clamp(2rem, -6.75rem + 20vw, 3rem);
 }
 footer .cards {
   background-color: #4e4ec1;
   display: flex;
   font-weight: bold;
+  border: none;
   cursor: pointer;
+}
+footer .cards p {
+  font-size: clamp(1rem, -0.75rem + 4vw, 1.2rem);
 }
 footer .cards h4 {
   font-weight: bolder;
   text-decoration: underline;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, -2.875rem + 10vw, 2rem);
 }
 footer .cards a {
   display: block;
@@ -88,6 +102,12 @@ footer .cards a {
   background-color: #1c1938;
   border: none;
   margin: 5px;
+  font-size: clamp(1.1rem, -0.65rem + 4vw, 1.3rem);
+  padding: 10px;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 footer .cards a:hover {
   background-color: rgba(28, 25, 56, 0.4274509804);
@@ -845,6 +865,11 @@ footer .cards a:hover {
     width: 100%;
     border-radius: 0;
     box-shadow: none;
+  }
+  /*Footer responsive*/
+  footer div {
+    align-items: center;
+    justify-content: center;
   }
 }
 /* Responsive Mobile */

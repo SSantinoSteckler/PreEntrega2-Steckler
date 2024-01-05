@@ -86,6 +86,13 @@
       box-shadow: none;
     }
   }
+  /*Footer responsive*/
+  footer {
+    div {
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 
 /* Responsive Mobile */
@@ -201,8 +208,10 @@
     .main-index__section-card {
       flex-direction: column-reverse;
       width: 100%;
+
       .main-index__section-card__article-text {
         padding: 32px;
+
         .main-index__section-card__article-text__div-dates {
           flex-wrap: wrap;
           justify-content: center;

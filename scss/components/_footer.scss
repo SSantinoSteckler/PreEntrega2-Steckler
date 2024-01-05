@@ -1,28 +1,50 @@
 footer {
-  background-color: #4e4ec1;
+  background-color: $color-title-index;
   border-top: solid;
   display: flex;
   flex-direction: row;
   padding: 20px;
   gap: 30px;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      color: $color-purple-dark;
+      font-weight: 900;
+      font-size: clamp(2rem, -6.75rem + 20vw, 3rem);
+    }
+  }
   .cards {
-    background-color: #4e4ec1;
+    background-color: $color-title-index;
     display: flex;
     font-weight: bold;
+
+    border: none;
     cursor: pointer;
+    p {
+      font-size: clamp(1rem, -0.75rem + 4vw, 1.2rem);
+    }
     h4 {
       font-weight: bolder;
       text-decoration: underline;
-      font-size: 1.5rem;
+      font-size: clamp(1.5rem, -2.875rem + 10vw, 2rem);
     }
     a {
       display: block;
-      color: #a65bd4;
+      color: $color-pink-dark;
       background-color: #1c1938;
       border: none;
       margin: 5px;
+      font-size: clamp(1.1rem, -0.65rem + 4vw, 1.3rem);
+      padding: 10px;
+      text-decoration: none;
+      width: 100%;
+      border-radius: 10px;
+
+      transition: all 0.3s ease;
       &:hover {
         background-color: #1c19386d;
       }
