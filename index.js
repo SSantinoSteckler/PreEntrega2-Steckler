@@ -79,6 +79,7 @@ function simularCompra() {
       });
       resumenCompra += `total: $${total}`;
       alert(resumenCompra);
+      alert('Compra Finalizada');
     }
   }
 }
