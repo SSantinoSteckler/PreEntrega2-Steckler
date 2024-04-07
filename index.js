@@ -45,7 +45,7 @@ function simularCompra() {
     let seleccion;
     while (seleccion !== '0') {
       seleccion = prompt(
-        'Ingrese el número del producto que quieres comprar (0 para terminar la compra de productos):'
+        'Ingrese el numero del producto que quieres comprar (0 para terminar la compra de productos):'
       );
 
       if (seleccion === null) {
@@ -60,7 +60,7 @@ function simularCompra() {
 
       if (isNaN(index) || index < 0 || index >= productos.length) {
         alert(
-          'Por favor elija un número dentro del rango de numeros de productos que establecimos'
+          'Por favor elija un numero dentro del rango de numeros de productos que establecimos'
         );
         continue;
       }
@@ -71,9 +71,9 @@ function simularCompra() {
     }
 
     if (carrito.length === 0) {
-      alert('No seleciconaste ningún producto por lo que cancelamos tu compra');
+      alert('No seleciconaste ningun producto por lo que cancelamos tu compra');
     } else {
-      let resumenCompra = 'Resumen de la Compra:\n';
+      let resumenCompra = 'Resumen de la compra:\n';
       carrito.forEach((producto) => {
         resumenCompra += `${producto.nombre} - $${producto.precio}\n`;
       });
